@@ -1,3 +1,0 @@
-shlibs:Depends=libc6 (>= 2.34), libevdev2 (>= 0.9.1)
-misc:Depends=
-misc:Pre-Depends=
