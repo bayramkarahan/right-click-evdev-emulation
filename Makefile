@@ -19,5 +19,15 @@ $(TARGET): $(OBJS)
 	$(CC) $(XFLAGS) $^ $(LIBRARIES) -o $@
 
 all: $(TARGET)
+
+build:
+	: run make install
+install:
+	mkdir -p $(DESTDIR)/usr/bin
+	cp -prfv $(OUTDIR)/evdev-rce $(DESTDIR)/usr/bin/rightclick
+	mkdir -p $(DESTDIR)/etc/systemd/system
+	cp -prfv rightclick.service  $(DESTDIR)/etc/systemd/system
+
+	
 clean:
 	rm -rf $(OUTDIR)

@@ -1,0 +1,10 @@
+Package: rightclick
+Version: 1.0
+Architecture: amd64
+Maintainer: Bayram KARAHAN <bayramk@gmail.com>
+Installed-Size: 36
+Depends: libc6 (>= 2.34), libevdev2 (>= 0.9.1)
+Section: utils
+Priority: optional
+Homepage: http://pardus.org.tr
+Description: by-rightclick Uygulaması
